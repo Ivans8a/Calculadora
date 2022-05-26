@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title> Integrales Definidas | Xicotencatl Nava A.</title>
+    <script src="integral.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,800;1,9..144,700&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        function integral() {
+            document.getElementById("respuesta").innerHTML = "La integral definida es: " + integrar(1, 0, 1000000)
+        }
+
+        function reglafalsa() {
+            document.getElementById("respuesta").innerHTML = "La integral definida es: " + procesarreglafalsa(1, 0, 1, 1)
+        }
+    </script>
+</head>
+
+<body>
+
+    <center>
+        <h1> Integrales Definidas | Xicotencatl Nava A.</h1>
+        <label for="submit">Integral definida</label>
+        <input type="submit" onclick="integrar();" />
+    </center>
+    <center>
+        <h1> Integrales Definidas | Xicotencatl Nava A.</h1>
+        <label for="sumbit">reglafalsa</label>
+        <input type="submit" onclick="procesarreglafalsa();" />
+    </center>
+    <br/>
+    <hr>
+    <div id="respuesta"="text-align:center;padding:1em"></div>
+</body>
+
+</html>

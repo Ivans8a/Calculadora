@@ -1,0 +1,38 @@
+* {
+    font-family: 'Fraunces', serif;
+    color: rgb(5, 10, 14);
+}
+
+body {
+    margin: 0;
+    background-color: darkslateblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.CalculadoraReglafalsa {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    /*separa por columnas, 4 es el numero de columnas y 75 px su tamaño*/
+    grid-template-rows: 160px repeat(0, 50px);
+    background-color: seagreen;
+    padding: 15px;
+    /*se refiere a la separacion de los botones en este caso*/
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+input {
+    cursor: pointer;
+    margin: px;
+    padding: 0px;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: rgb(188, 149, 206);
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+}
